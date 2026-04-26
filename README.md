@@ -64,8 +64,8 @@ IF([@region]="Central",CHOOSE(RANDBETWEEN(1,2),"C01","C02"),
 
 ```excel
 =IF([@price]*[@quantity]<=100, 0,
-IF([@price]*[@quantity]<=200, 0.05,
-IF([@price]*[@quantity]<=300, 0.10, 0.15)))
+IF([@price]*[@quantity]<=200, 0.10,
+IF([@price]*[@quantity]<=400, 0.15,0.20)))
 ```
 
 * **Total amount after discount:**
